@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper,twoside,english]{book}
+
+\usepackage{Formato}
+
+\title{Tesis 1 Portada y resumenes }
+\author{Aaron Sújar}
+
+\begin{document}
+
+\frontmatter
+\input{Portada.tex}
+
+\pagenumbering{roman}
+
+\include{CitayAgra}
+
+\include{Resumen}
+
+\include{Summary}
+
+\include{Acronyms}
+
+\tableofcontents
+
+\listoffigures
+ 
+\listoftables
+
+\mainmatter
+
+
+%\appendix
+%\include{appendix}
+\cleardoublepage
+% Como incorporar como un capitulo mas en el indice de la bibliografia
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{bibliography}
+\bibliographystyle{alpha}
+\end{document}
